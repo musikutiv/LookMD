@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>%%MARKED_JS%%</script>
+<style>
+  :root {
+    color-scheme: light dark;
+    --fg: #1b1f23;
+    --bg: #ffffff;
+    --muted: #6a737d;
+    --border: #e1e4e8;
+    --code-bg: #f6f8fa;
+    --link: #0366d6;
+    --blockquote: #6a737d;
+    --table-stripe: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #e6edf3;
+      --bg: #0d1117;
+      --muted: #8b949e;
+      --border: #30363d;
+      --code-bg: #161b22;
+      --link: #58a6ff;
+      --blockquote: #8b949e;
+      --table-stripe: #161b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 2.5rem 3rem;
+    max-width: 860px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+  }
+  h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+  h2 { font-size: 1.5em; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+  h3 { font-size: 1.25em; }
+  h1:first-child, h2:first-child, h3:first-child { margin-top: 0; }
+  p, ul, ol, blockquote, table, pre { margin-top: 0; margin-bottom: 1em; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.875em;
+    background: var(--code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+  }
+  pre {
+    background: var(--code-bg);
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.85em;
+  }
+  blockquote {
+    color: var(--blockquote);
+    border-left: 0.25em solid var(--border);
+    padding: 0 1em;
+    margin-left: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.4em 0.8em;
+  }
+  tr:nth-child(2n) { background: var(--table-stripe); }
+  img { max-width: 100%; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2em 0;
+  }
+  ul.task-list { list-style: none; padding-left: 0.5em; }
+  li input[type="checkbox"] { margin-right: 0.5em; }
+</style>
+</head>
+<body>
+<div id="content"></div>
+<script id="source" type="application/json">%%MARKDOWN_JSON%%</script>
+<script>
+  const raw = JSON.parse(document.getElementById('source').textContent);
+  marked.setOptions({ gfm: true, breaks: false });
+  document.getElementById('content').innerHTML = marked.parse(raw);
+</script>
+</body>
+</html>

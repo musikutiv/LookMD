@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4F6A4B9CF36B1D15B7DC14 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 08F53A5BD6057D77CAD0B87F /* marked.min.js */; };
+		1E3238AC15D9F7F6991A0A69 /* render.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AC68BE71AA02E5E2AF12D54 /* render.html */; };
+		231C08215F73D79D515B9E95 /* MarkdownHTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */; };
+		36264BDEAA58DF3DDEB03A13 /* MarkdownHTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */; };
+		494D7D0EAB47CA2DE2458087 /* render.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AC68BE71AA02E5E2AF12D54 /* render.html */; };
+		93C3DCDC1F9305658F14805D /* QuickLookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F698E9EC4697A463A76FACC1 /* QuickLookUI.framework */; };
+		99A9260B2CDFDF5B760818E3 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 08F53A5BD6057D77CAD0B87F /* marked.min.js */; };
+		B4F510D4FD932F48B501353F /* MarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD013B9A52367D844ED18762 /* MarkdownDocument.swift */; };
+		C2CDE84C4E8A43868EDCE207 /* LookMDQuickLook.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC4EA704247171BB89AE59A0 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8BCA5D318255BFF42B8A /* PreviewProvider.swift */; };
+		D8CFCD1157BD21A08C688EB9 /* LookMDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7477764D86B17D900CFD316 /* LookMDApp.swift */; };
+		FA3E65BB4CAAE95930E34B87 /* MarkdownWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA56F093C55052140945BC /* MarkdownWebView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7D5E2401C86249609085EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748614DA98343C0CF761156C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D21DB6F1879744D51E8FFA;
+			remoteInfo = LookMDQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8970A4672EAA31376722F46 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C2CDE84C4E8A43868EDCE207 /* LookMDQuickLook.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08F53A5BD6057D77CAD0B87F /* marked.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
+		15EA56F093C55052140945BC /* MarkdownWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownWebView.swift; sourceTree = "<group>"; };
+		2AC68BE71AA02E5E2AF12D54 /* render.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = render.html; sourceTree = "<group>"; };
+		3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LookMDQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		89829380E6F1D4E8EA672A02 /* LookMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACC8BCA5D318255BFF42B8A /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		AD013B9A52367D844ED18762 /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
+		B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHTMLBuilder.swift; sourceTree = "<group>"; };
+		C7477764D86B17D900CFD316 /* LookMDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookMDApp.swift; sourceTree = "<group>"; };
+		F698E9EC4697A463A76FACC1 /* QuickLookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookUI.framework; path = System/Library/Frameworks/QuickLookUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF1973C7E88D5F70FCFB772E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C3DCDC1F9305658F14805D /* QuickLookUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06CA059B5991F7A920A657A5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1B4BFE71C7634CCB715E2371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F698E9EC4697A463A76FACC1 /* QuickLookUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E78664FD9FB577B4CBC82A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9ACC8BCA5D318255BFF42B8A /* PreviewProvider.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		763121E0841E32ACD2FF44D5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F144079A8AC5EC594BF7FC2B /* Resources */,
+				06CA059B5991F7A920A657A5 /* Sources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8C0E14462F735805871D75B6 = {
+			isa = PBXGroup;
+			children = (
+				BFE4EDFC6099D77ED8253A96 /* LookMD */,
+				8FB9E958DE32DF52BC2F54BF /* LookMDQuickLook */,
+				763121E0841E32ACD2FF44D5 /* Shared */,
+				1B4BFE71C7634CCB715E2371 /* Frameworks */,
+				CA12E0C207F0E1D2ADE77261 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB9E958DE32DF52BC2F54BF /* LookMDQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				1E78664FD9FB577B4CBC82A8 /* Sources */,
+			);
+			path = LookMDQuickLook;
+			sourceTree = "<group>";
+		};
+		9EEE06FFB02D9CCBB4379394 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C7477764D86B17D900CFD316 /* LookMDApp.swift */,
+				AD013B9A52367D844ED18762 /* MarkdownDocument.swift */,
+				15EA56F093C55052140945BC /* MarkdownWebView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BFE4EDFC6099D77ED8253A96 /* LookMD */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE06FFB02D9CCBB4379394 /* Sources */,
+			);
+			path = LookMD;
+			sourceTree = "<group>";
+		};
+		CA12E0C207F0E1D2ADE77261 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89829380E6F1D4E8EA672A02 /* LookMD.app */,
+				3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F144079A8AC5EC594BF7FC2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08F53A5BD6057D77CAD0B87F /* marked.min.js */,
+				2AC68BE71AA02E5E2AF12D54 /* render.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B4F4A9B8CC0721679C5A25A /* LookMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8A078AB39D1326D8292FC9C /* Build configuration list for PBXNativeTarget "LookMD" */;
+			buildPhases = (
+				4DD874AC038E03D250CF6CAD /* Sources */,
+				53E54FAE98DB1F4D22D3DAC8 /* Resources */,
+				A8970A4672EAA31376722F46 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F27DAFC28A0BED3B46AE28D0 /* PBXTargetDependency */,
+			);
+			name = LookMD;
+			packageProductDependencies = (
+			);
+			productName = LookMD;
+			productReference = 89829380E6F1D4E8EA672A02 /* LookMD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96D21DB6F1879744D51E8FFA /* LookMDQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C313B6A7E9DCD97F319DB6E7 /* Build configuration list for PBXNativeTarget "LookMDQuickLook" */;
+			buildPhases = (
+				16476C4AB6069B4A2099BB0C /* Sources */,
+				6B1E600B8CFD9582A8047C48 /* Resources */,
+				CF1973C7E88D5F70FCFB772E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LookMDQuickLook;
+			packageProductDependencies = (
+			);
+			productName = LookMDQuickLook;
+			productReference = 3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748614DA98343C0CF761156C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5B4F4A9B8CC0721679C5A25A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					96D21DB6F1879744D51E8FFA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 2FD3B2DAD7063C8B08F4508F /* Build configuration list for PBXProject "LookMD" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8C0E14462F735805871D75B6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CA12E0C207F0E1D2ADE77261 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B4F4A9B8CC0721679C5A25A /* LookMD */,
+				96D21DB6F1879744D51E8FFA /* LookMDQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53E54FAE98DB1F4D22D3DAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A9260B2CDFDF5B760818E3 /* marked.min.js in Resources */,
+				1E3238AC15D9F7F6991A0A69 /* render.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1E600B8CFD9582A8047C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4F6A4B9CF36B1D15B7DC14 /* marked.min.js in Resources */,
+				494D7D0EAB47CA2DE2458087 /* render.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16476C4AB6069B4A2099BB0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231C08215F73D79D515B9E95 /* MarkdownHTMLBuilder.swift in Sources */,
+				CC4EA704247171BB89AE59A0 /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD874AC038E03D250CF6CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8CFCD1157BD21A08C688EB9 /* LookMDApp.swift in Sources */,
+				B4F510D4FD932F48B501353F /* MarkdownDocument.swift in Sources */,
+				36264BDEAA58DF3DDEB03A13 /* MarkdownHTMLBuilder.swift in Sources */,
+				FA3E65BB4CAAE95930E34B87 /* MarkdownWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F27DAFC28A0BED3B46AE28D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D21DB6F1879744D51E8FFA /* LookMDQuickLook */;
+			targetProxy = FA7D5E2401C86249609085EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0101DC77B4FA203197A7BCE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = LookMDQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikutiv.lookmd.QuickLookExtension;
+				PRODUCT_NAME = LookMDQuickLook;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2D9758C4DD112157A2DDD74C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = LookMD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikutiv.lookmd;
+				PRODUCT_NAME = LookMD;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2E4DA37443E55AE45679AA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = LookMDQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikutiv.lookmd.QuickLookExtension;
+				PRODUCT_NAME = LookMDQuickLook;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4D70D4233E79026BA6B93E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = LookMD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikutiv.lookmd;
+				PRODUCT_NAME = LookMD;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6375DF35444B1A1B72E71C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBA67B44F38074A9C8B062BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FD3B2DAD7063C8B08F4508F /* Build configuration list for PBXProject "LookMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6375DF35444B1A1B72E71C35 /* Debug */,
+				EBA67B44F38074A9C8B062BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C313B6A7E9DCD97F319DB6E7 /* Build configuration list for PBXNativeTarget "LookMDQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4DA37443E55AE45679AA4A /* Debug */,
+				0101DC77B4FA203197A7BCE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C8A078AB39D1326D8292FC9C /* Build configuration list for PBXNativeTarget "LookMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9758C4DD112157A2DDD74C /* Debug */,
+				4D70D4233E79026BA6B93E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748614DA98343C0CF761156C /* Project object */;
+}
