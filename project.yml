@@ -54,6 +54,7 @@ targets:
         PRODUCT_NAME: LookMD
         ENABLE_HARDENED_RUNTIME: NO
         COMBINE_HIDPI_IMAGES: YES
+        CODE_SIGN_ENTITLEMENTS: LookMD/LookMD.entitlements
     dependencies:
       - target: LookMDQuickLook
         embed: true
@@ -72,7 +73,7 @@ targets:
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.quicklook.preview
-          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PreviewProvider
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PreviewViewController
           NSExtensionAttributes:
             QLSupportedContentTypes:
               - net.daringfireball.markdown
@@ -83,8 +84,10 @@ targets:
         PRODUCT_NAME: LookMDQuickLook
         SKIP_INSTALL: YES
         ENABLE_HARDENED_RUNTIME: NO
+        CODE_SIGN_ENTITLEMENTS: LookMDQuickLook/LookMDQuickLook.entitlements
     dependencies:
       - sdk: QuickLookUI.framework
+      - sdk: WebKit.framework
 
 schemes:
   LookMD:

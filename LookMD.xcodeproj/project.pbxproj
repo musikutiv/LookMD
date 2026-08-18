@@ -11,12 +11,13 @@
 		1E3238AC15D9F7F6991A0A69 /* render.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AC68BE71AA02E5E2AF12D54 /* render.html */; };
 		231C08215F73D79D515B9E95 /* MarkdownHTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */; };
 		36264BDEAA58DF3DDEB03A13 /* MarkdownHTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */; };
+		39DC17184FED58C8BB3A7DEE /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D070920FFC041EB67ADE35E /* PreviewViewController.swift */; };
 		494D7D0EAB47CA2DE2458087 /* render.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AC68BE71AA02E5E2AF12D54 /* render.html */; };
 		93C3DCDC1F9305658F14805D /* QuickLookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F698E9EC4697A463A76FACC1 /* QuickLookUI.framework */; };
 		99A9260B2CDFDF5B760818E3 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 08F53A5BD6057D77CAD0B87F /* marked.min.js */; };
 		B4F510D4FD932F48B501353F /* MarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD013B9A52367D844ED18762 /* MarkdownDocument.swift */; };
+		BBF5950B3503AF088C4596DA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F276BACD039219DB9EE53707 /* WebKit.framework */; };
 		C2CDE84C4E8A43868EDCE207 /* LookMDQuickLook.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CC4EA704247171BB89AE59A0 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8BCA5D318255BFF42B8A /* PreviewProvider.swift */; };
 		D8CFCD1157BD21A08C688EB9 /* LookMDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7477764D86B17D900CFD316 /* LookMDApp.swift */; };
 		FA3E65BB4CAAE95930E34B87 /* MarkdownWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA56F093C55052140945BC /* MarkdownWebView.swift */; };
 /* End PBXBuildFile section */
@@ -49,12 +50,13 @@
 		08F53A5BD6057D77CAD0B87F /* marked.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
 		15EA56F093C55052140945BC /* MarkdownWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownWebView.swift; sourceTree = "<group>"; };
 		2AC68BE71AA02E5E2AF12D54 /* render.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = render.html; sourceTree = "<group>"; };
+		3D070920FFC041EB67ADE35E /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LookMDQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		89829380E6F1D4E8EA672A02 /* LookMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ACC8BCA5D318255BFF42B8A /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		AD013B9A52367D844ED18762 /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
 		B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHTMLBuilder.swift; sourceTree = "<group>"; };
 		C7477764D86B17D900CFD316 /* LookMDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookMDApp.swift; sourceTree = "<group>"; };
+		F276BACD039219DB9EE53707 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F698E9EC4697A463A76FACC1 /* QuickLookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookUI.framework; path = System/Library/Frameworks/QuickLookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93C3DCDC1F9305658F14805D /* QuickLookUI.framework in Frameworks */,
+				BBF5950B3503AF088C4596DA /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F698E9EC4697A463A76FACC1 /* QuickLookUI.framework */,
+				F276BACD039219DB9EE53707 /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,7 +93,7 @@
 		1E78664FD9FB577B4CBC82A8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9ACC8BCA5D318255BFF42B8A /* PreviewProvider.swift */,
+				3D070920FFC041EB67ADE35E /* PreviewViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -266,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231C08215F73D79D515B9E95 /* MarkdownHTMLBuilder.swift in Sources */,
-				CC4EA704247171BB89AE59A0 /* PreviewProvider.swift in Sources */,
+				39DC17184FED58C8BB3A7DEE /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,7 @@
 		0101DC77B4FA203197A7BCE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LookMDQuickLook/LookMDQuickLook.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = LookMDQuickLook/Info.plist;
@@ -314,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LookMD/LookMD.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = LookMD/Info.plist;
@@ -330,6 +336,7 @@
 		2E4DA37443E55AE45679AA4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LookMDQuickLook/LookMDQuickLook.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = LookMDQuickLook/Info.plist;
@@ -349,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LookMD/LookMD.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = LookMD/Info.plist;
