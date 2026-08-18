@@ -7,14 +7,31 @@ A tiny, native macOS app for viewing rendered Markdown.
 
 No editing, no accounts, no network calls. Markdown is parsed locally with a bundled copy of [marked](https://github.com/markedjs/marked) (MIT licensed) inside a `WKWebView`, styled to match Finder's light/dark appearance.
 
+## Install
+
+Download the latest `LookMD.dmg` from [Releases](https://github.com/musikutiv/LookMD/releases), open it, and drag **LookMD** into **Applications**.
+
+This build isn't signed with an Apple Developer ID (no paid developer account behind it), so macOS Gatekeeper will block the first launch with an "unidentified developer" warning. One-time fix, pick one:
+
+- Right-click (or Control-click) `LookMD.app` in Applications → **Open** → **Open** again in the dialog. After this first launch it opens normally from then on.
+- Or, in Terminal: `xattr -cr /Applications/LookMD.app`
+
+To make it the default app for `.md`/`.markdown` files, either set it via Finder (right-click a `.md` file → Get Info → Open with → LookMD → Change All…), or:
+
+```sh
+brew install duti
+duti -s com.musikutiv.lookmd net.daringfireball.markdown all
+```
+
 ## Project layout
 
 - `LookMD/` — the SwiftUI app target (document viewer, registers as a handler for the markdown UTI).
-- `LookMDQuickLook/` — the `QLPreviewProvider` app extension embedded in the app, powers the Finder Quick Look panel.
+- `LookMDQuickLook/` — the `QLPreviewingController` app extension embedded in the app, powers the Finder Quick Look panel.
 - `Shared/` — rendering code and resources (`marked.min.js`, HTML/CSS template) used by both targets.
 - `project.yml` — [XcodeGen](https://github.com/yonaskolb/XcodeGen) spec; the source of truth for the `.xcodeproj`.
+- `scripts/build-dmg.sh` — builds a Release app and packages it into `build/LookMD.dmg`.
 
-## Building
+## Building from source
 
 ```sh
 brew install xcodegen   # once
@@ -24,15 +41,14 @@ xcodebuild -project LookMD.xcodeproj -scheme LookMD -configuration Release build
 
 Or just open `LookMD.xcodeproj` in Xcode and run.
 
-## Installing locally
+To build the same DMG that ships in Releases:
+
+```sh
+./scripts/build-dmg.sh
+```
+
+## Installing a local build
 
 ```sh
 ditto build/Build/Products/Release/LookMD.app /Applications/LookMD.app
-```
-
-Then set it as the default Markdown viewer (optional):
-
-```sh
-brew install duti
-duti -s com.musikutiv.lookmd net.daringfireball.markdown all
 ```
