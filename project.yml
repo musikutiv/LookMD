@@ -36,6 +36,16 @@ targets:
             LSHandlerRank: Owner
             LSItemContentTypes:
               - net.daringfireball.markdown
+          - CFBundleTypeName: R Markdown Document
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Owner
+            LSItemContentTypes:
+              - com.musikutiv.lookmd.rmarkdown
+          - CFBundleTypeName: Quarto Document
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Owner
+            LSItemContentTypes:
+              - com.musikutiv.lookmd.qmd
         UTExportedTypeDeclarations:
           - UTTypeIdentifier: net.daringfireball.markdown
             UTTypeConformsTo:
@@ -48,6 +58,20 @@ targets:
                 - mdown
                 - mkdn
                 - mkd
+          - UTTypeIdentifier: com.musikutiv.lookmd.rmarkdown
+            UTTypeConformsTo:
+              - public.plain-text
+            UTTypeDescription: R Markdown Document
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - Rmd
+          - UTTypeIdentifier: com.musikutiv.lookmd.qmd
+            UTTypeConformsTo:
+              - public.plain-text
+            UTTypeDescription: Quarto Document
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - qmd
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.musikutiv.lookmd
@@ -77,6 +101,8 @@ targets:
           NSExtensionAttributes:
             QLSupportedContentTypes:
               - net.daringfireball.markdown
+              - com.musikutiv.lookmd.rmarkdown
+              - com.musikutiv.lookmd.qmd
             QLSupportsSearchableItems: NO
     settings:
       base:

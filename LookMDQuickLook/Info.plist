@@ -25,6 +25,8 @@
 			<key>QLSupportedContentTypes</key>
 			<array>
 				<string>net.daringfireball.markdown</string>
+				<string>com.musikutiv.lookmd.rmarkdown</string>
+				<string>com.musikutiv.lookmd.qmd</string>
 			</array>
 			<key>QLSupportsSearchableItems</key>
 			<false/>

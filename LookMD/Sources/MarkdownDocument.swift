@@ -2,7 +2,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct MarkdownDocument: FileDocument {
-    static var readableContentTypes: [UTType] = [.markdownText]
+    static var readableContentTypes: [UTType] = [.markdownText, .rMarkdownText, .quartoText]
 
     var text: String
 
@@ -26,5 +26,11 @@ struct MarkdownDocument: FileDocument {
 extension UTType {
     static var markdownText: UTType {
         UTType(importedAs: "net.daringfireball.markdown")
+    }
+    static var rMarkdownText: UTType {
+        UTType(importedAs: "com.musikutiv.lookmd.rmarkdown")
+    }
+    static var quartoText: UTType {
+        UTType(importedAs: "com.musikutiv.lookmd.qmd")
     }
 }
