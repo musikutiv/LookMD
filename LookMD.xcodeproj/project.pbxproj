@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2B595688C96C9C6C0047F2 /* MarkdownDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972C6C67E13C29E2220881A2 /* MarkdownDocumentView.swift */; };
 		0E4F6A4B9CF36B1D15B7DC14 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 08F53A5BD6057D77CAD0B87F /* marked.min.js */; };
 		1E3238AC15D9F7F6991A0A69 /* render.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AC68BE71AA02E5E2AF12D54 /* render.html */; };
 		231C08215F73D79D515B9E95 /* MarkdownHTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */; };
@@ -19,6 +20,7 @@
 		BBF5950B3503AF088C4596DA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F276BACD039219DB9EE53707 /* WebKit.framework */; };
 		C2CDE84C4E8A43868EDCE207 /* LookMDQuickLook.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8CFCD1157BD21A08C688EB9 /* LookMDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7477764D86B17D900CFD316 /* LookMDApp.swift */; };
+		DECAD3EA903A88541DE70A19 /* ExportActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F031E170C7A1A9ED2C3315 /* ExportActions.swift */; };
 		FA3E65BB4CAAE95930E34B87 /* MarkdownWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA56F093C55052140945BC /* MarkdownWebView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,12 +49,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04F031E170C7A1A9ED2C3315 /* ExportActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportActions.swift; sourceTree = "<group>"; };
 		08F53A5BD6057D77CAD0B87F /* marked.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
 		15EA56F093C55052140945BC /* MarkdownWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownWebView.swift; sourceTree = "<group>"; };
 		2AC68BE71AA02E5E2AF12D54 /* render.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = render.html; sourceTree = "<group>"; };
 		3D070920FFC041EB67ADE35E /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		3F314B69D13EC334950A9288 /* LookMDQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LookMDQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		89829380E6F1D4E8EA672A02 /* LookMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		972C6C67E13C29E2220881A2 /* MarkdownDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocumentView.swift; sourceTree = "<group>"; };
 		AD013B9A52367D844ED18762 /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
 		B340E795B2D2302BAE9DBCE6 /* MarkdownHTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHTMLBuilder.swift; sourceTree = "<group>"; };
 		C7477764D86B17D900CFD316 /* LookMDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookMDApp.swift; sourceTree = "<group>"; };
@@ -129,8 +133,10 @@
 		9EEE06FFB02D9CCBB4379394 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				04F031E170C7A1A9ED2C3315 /* ExportActions.swift */,
 				C7477764D86B17D900CFD316 /* LookMDApp.swift */,
 				AD013B9A52367D844ED18762 /* MarkdownDocument.swift */,
+				972C6C67E13C29E2220881A2 /* MarkdownDocumentView.swift */,
 				15EA56F093C55052140945BC /* MarkdownWebView.swift */,
 			);
 			path = Sources;
@@ -278,8 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECAD3EA903A88541DE70A19 /* ExportActions.swift in Sources */,
 				D8CFCD1157BD21A08C688EB9 /* LookMDApp.swift in Sources */,
 				B4F510D4FD932F48B501353F /* MarkdownDocument.swift in Sources */,
+				0B2B595688C96C9C6C0047F2 /* MarkdownDocumentView.swift in Sources */,
 				36264BDEAA58DF3DDEB03A13 /* MarkdownHTMLBuilder.swift in Sources */,
 				FA3E65BB4CAAE95930E34B87 /* MarkdownWebView.swift in Sources */,
 			);

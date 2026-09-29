@@ -8,7 +8,7 @@ enum MarkdownHTMLBuilder {
         case templateUnreadable
     }
 
-    static func buildHTML(markdown: String, bundle: Bundle) throws -> String {
+    static func buildHTML(markdown: String, bundle: Bundle, baseURL: URL? = nil) throws -> String {
         guard let templateURL = bundle.url(forResource: "render", withExtension: "html") else {
             throw BuilderError.templateNotFound
         }
@@ -27,11 +27,13 @@ enum MarkdownHTMLBuilder {
         // Guard against premature </script> termination inside the payload.
         let safeJSON = jsonString.replacingOccurrences(of: "</script>", with: "<\\/script>")
         let safeMarkedJS = markedJS.replacingOccurrences(of: "</script>", with: "<\\/script>")
+        let baseTag = baseURL.map { "<base href=\"\(escapeHTML($0.absoluteString))\">" } ?? ""
 
         return template
             .replacingOccurrences(of: "%%MARKED_JS%%", with: safeMarkedJS)
             .replacingOccurrences(of: "%%MARKDOWN_JSON%%", with: safeJSON)
             .replacingOccurrences(of: "%%FRONTMATTER_HTML%%", with: frontmatterHTML(frontmatter))
+            .replacingOccurrences(of: "%%BASE_TAG%%", with: baseTag)
     }
 
     // MARK: - YAML frontmatter (R Markdown / Quarto)
