@@ -2,11 +2,18 @@ import SwiftUI
 import WebKit
 import UniformTypeIdentifiers
 
+/// Holds the WKWebView outside of SwiftUI's state system: setting it happens inside
+/// NSViewRepresentable.makeNSView, and mutating @State there races the current render
+/// pass (the assignment can be dropped, leaving PDF export reading a stale nil).
+private final class WebViewHolder {
+    var webView: WKWebView?
+}
+
 struct MarkdownDocumentView: View {
     let markdown: String
     let fileURL: URL?
 
-    @State private var webView: WKWebView?
+    @State private var webViewHolder = WebViewHolder()
 
     private var baseURL: URL? {
         fileURL?.deletingLastPathComponent()
@@ -17,7 +24,7 @@ struct MarkdownDocumentView: View {
     }
 
     var body: some View {
-        MarkdownWebView(markdown: markdown, baseURL: baseURL) { webView = $0 }
+        MarkdownWebView(markdown: markdown, baseURL: baseURL) { webViewHolder.webView = $0 }
             .frame(minWidth: 480, minHeight: 360)
             .focusedSceneValue(\.exportActions, ExportActions(
                 exportHTML: exportHTML,
@@ -40,7 +47,7 @@ struct MarkdownDocumentView: View {
     }
 
     private func exportPDF() {
-        guard let webView else { return }
+        guard let webView = webViewHolder.webView else { return }
 
         let panel = NSSavePanel()
         panel.allowedContentTypes = [.pdf]
