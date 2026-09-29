@@ -30,6 +30,8 @@ targets:
       properties:
         LSApplicationCategoryType: public.app-category.productivity
         NSHumanReadableCopyright: "Copyright © 2026 musikutiv."
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         CFBundleDocumentTypes:
           - CFBundleTypeName: Markdown Document
             CFBundleTypeRole: Viewer
