@@ -4,6 +4,7 @@ A tiny, native macOS app for viewing rendered Markdown.
 
 - **Quick Look**: select a `.md`/`.markdown`/`.Rmd`/`.qmd` file in Finder and hit Space — the rendered page shows up right in the Quick Look panel.
 - **Open normally**: double-click a file and it opens rendered (not as raw text).
+- **Export**: File → Export as HTML… (⌘⇧E) or Export as PDF… (⌘⌥⇧E) saves the rendered document as a portable, self-contained file.
 
 No editing, no accounts, no network calls. Markdown is parsed locally with a bundled copy of [marked](https://github.com/markedjs/marked) (MIT licensed) inside a `WKWebView`, styled to match Finder's light/dark appearance.
 
